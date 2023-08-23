@@ -1,9 +1,5 @@
 const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"];
-// function nameL(arr) {
-//     const li = arr.map((liName) => `<li class='item'>${liName}</li>`).join("");
-//     list.insertAdjacentHTML("beforeend", li);
-// }
-// nameL(ingredients);
+
 const list = document.querySelector("#ingredients");
 const listElemants = ingredients.map((element) => {
     const li = document.createElement("li");
