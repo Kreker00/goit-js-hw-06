@@ -3,4 +3,3 @@ const span = document.querySelector("#text");
 input.addEventListener("input", () => {
     span.style.fontSize = input.value + "px";
 });
-// оновлюючи властивість font-size
