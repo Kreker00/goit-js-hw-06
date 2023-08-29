@@ -12,9 +12,13 @@ const images = [
         alt: "Group of Horses Running",
     },
 ];
+const body = document.querySelector("body");
+body.style.background = "black";
+
 const gallery = document.querySelector(".gallery");
+gallery.style.display = "flex";
 function liElements(arr) {
-    const li = arr.map(({ url, alt }) => `<li class='item'><img src="${url}" alt="${alt}" /></li>`).join("");
+    const li = arr.map(({ url, alt }) => `<li class='item'><img src="${url}" alt="${alt}" width=600/></li>`).join("");
     gallery.insertAdjacentHTML("beforeend", li);
 }
 liElements(images);
